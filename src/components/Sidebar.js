@@ -1,12 +1,12 @@
 import React from "react";
-import styled from "styled-components";
 
-const Container = styled.div`
-  position: sticky;
-  height: 100vh;
+import { styled } from "@mui/system";
 
-  top: 0;
-`;
+const Container = styled("div")({
+  position: "sticky",
+  height: "600px",
+  top: 0,
+});
 
 const Sidebar = () => {
   return <Container>Sidebar</Container>;

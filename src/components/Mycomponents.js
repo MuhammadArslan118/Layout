@@ -1,14 +1,30 @@
 import React from "react";
-import styled from "styled-components";
+import { styled } from "@mui/system";
+import { Box } from "@mui/material";
 
-const Container = styled.div`
-  display: flex;
-  width: 100%;
-`;
-const StickyContainer = styled.div`
-  display: flex;
-  width: 100%;
-`;
+const Container = styled("div")({
+  display: "flex",
+  width: "100%",
+});
+const StickyContainer = styled("div")({
+  display: "flex",
+});
+const Top = styled("div")({
+  height: "93vh",
+  display: "flex",
+  justifyContent: "space-around",
+  width: "300px",
+  position: "sticky",
+  top: "50px",
+  borderRight: "1px solid red",
+  borderBottom: "1px solid red",
+  borderTop: "1px solid red",
+});
+const TopRight = styled("div")({
+  height: "100vh",
+  display: "flex",
+});
+
 const Mycomponents = () => {
   return (
     <Container sx={{ display: "flex" }}>
@@ -25,26 +41,11 @@ const Mycomponents = () => {
 
 export default Mycomponents;
 
-const Top = styled.div`
-  height: 600px;
-  display: flex;
-  justify-content: space-around;
-  width: 300px;
-  position: sticky;
-  top: 60px;
-  border-right: 1px solid red;
-  border-bottom: 1px solid red;
-`;
-const TopRight = styled.div`
-  height: 100vh;
-  display: flex;
-`;
-
 const StickySidebar = () => {
   return (
     <Top>
-      <div
-        style={{
+      <Box
+        sx={{
           display: "flex",
           justifyContent: "space-around",
           width: "100%",
@@ -52,7 +53,7 @@ const StickySidebar = () => {
       >
         <p>Sticky sidebar</p>
         <p>Sticky sidebar</p>
-      </div>
+      </Box>
     </Top>
   );
 };

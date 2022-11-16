@@ -1,15 +1,14 @@
 import React from "react";
-import styled from "styled-components";
+import { styled } from "@mui/system";
 
-const Container = styled.div`
-  height: 50px;
-  position: sticky;
-  background: black;
-  color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-`;
+const Container = styled("div")({
+  height: "50px",
+  position: "sticky",
+  background: "black",
+  color: "#fff",
+  top: 0,
+  zIndex: 100,
+});
 
 const Navbar = () => {
   return <Container>Navbar</Container>;

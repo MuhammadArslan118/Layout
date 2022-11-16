@@ -1,15 +1,15 @@
 import "./App.css";
-import styled from "styled-components";
+import { styled } from "@mui/system";
 import Layout from "./layout";
 import Mycomponents from "./components/Mycomponents";
 
-const AppContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  justify-content: center;
-  align-items: center;
-`;
+const AppContainer = styled("div")({
+  display: "flex",
+  flexDirection: "column",
+  padding: 0,
+  justifyContent: "center",
+  alignItems: "center",
+});
 
 function App() {
   return (
