@@ -27,7 +27,12 @@ const TopRight = styled("div")({
 
 const Mycomponents = () => {
   return (
-    <Container sx={{ display: "flex" }}>
+    <Container
+      sx={{
+        display: "flex",
+        flexWrap: { md: "nowrap", lg: "nowrap", sm: "nowrap", xs: "wrap" },
+      }}
+    >
       <StickyContainer>
         <StickySidebar />
       </StickyContainer>
